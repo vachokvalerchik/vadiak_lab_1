@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory work 1</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quella%3A400"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700%2C800"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C700%2C800"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=PT+Sans+Narrow&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="/Images/logo.png" type="image/x-icon">
+
+</head>
+    <header>
+        <h1>Laboratory work 1 (Task 3)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">На головну</a></li>
+
+                <li><a href="registration.html">Task 1</a></li>
+
+                <li><a href="questionnaire.html">Task 2</a></li>
+
+                <li><a href="contact.html">Task 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header {
+           
+            padding: 20px;
+            text-align: center;
+        }
+    
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+    
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+    
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            border: none;
+            max-width: 500px;            
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    
+        main {
+            padding: 20px;
+            margin: 0 auto;
+            
+            max-width: 250px;
+            
+            background-color: rgb(240, 240, 240)
+            box-shadow
+        }
+    
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    
+        input[type="number"] {
+            width: 60px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        #result {
+            min-height: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffe6cc;
+            border: 1px solid #ffc107;
+            border-radius: 5px;
+        }
+        #back{
+            width: 100%;
+        }
+    </style>
+    
+    <body>
+    
+    <main>
+            <div class="container">
+                <h1></h1>
+                <label for="inputText"></label>
+                <input type="text" id="inputText" placeholder="Enter a sentence">
+                <button onclick="capitalizeWords()">Capitalize</button>
+                <div id="result-container">
+                    <p id="result"></p>
+                </div>
+            </div>
+    
+    </main>
+    
+    <script src="../JS/task3.js"></script>
+    </body>
+
+
+</html>
